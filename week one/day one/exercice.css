@@ -1,0 +1,38 @@
+
+h3{
+    text-indent: 30px;
+    text-decoration: underline;
+}
+.the_domestic_cat{    
+    
+    padding-left: 50px; 
+}
+
+h5{
+    text-indent: 650px;
+    
+}
+
+img{
+    border: 5px solid red;
+    width: 320px;
+    height: 210px;
+    margin: 10px;
+    margin-left: 38%;
+    
+}
+
+h4{
+    border: 1px solid red;
+    text-align: center;
+    color: red;
+    width: 400px;
+    margin-left: 400px;
+}
+
+table, tr, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    position: relative;
+    margin-left: 60px;
+}
