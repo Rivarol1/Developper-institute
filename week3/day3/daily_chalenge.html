@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Daily challenge: Show only letters</h1>
+    Eneter letters: <input>
+    <span id="output"></span>
+
+    <script >
+
+        /*pour obtenir la derniere lettre d'un string 
+
+        */
+        document.querySelector('input').addEventListener('input', check_letters)
+        let letters_pattern=/^[a-zA-z]/
+        function check_letters(e){
+            let user_input=e.targed.value            
+            let last_index = user_input.length-1
+            console.log(user_input.substring(last_index))
+            let last_input=user_input.substring(last_index)
+            if(last_input.match(letters_pattern)){
+                document.querySelector('input').innerHTML+=last_input
+            }
+
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- exercice 1 -->
+    <article>
+        <h1> Some Facts </h1>
+        <h2> The Chocolate </h2>
+        <h3> History of the chocolate </h3>
+        <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+        Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+        <p> After the European discovery of the Americas, chocolate became 
+        very popular in the wider world, and its demand exploded. </p>
+        <p> Chocolate has since become a popular food product that millions enjoy every day, 
+        thanks to its unique, rich, and sweet taste.</p> 
+        <p> But what effect does eating chocolate have on our health?</p> 
+        <button id="try" onClick="fun12()" >Click here</button>
+    </article>
+
+    <!-- exercice 2 -->
+    <form>
+        <label id="po" for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label id="pi" for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit" id="submit">
+      </form> 
+      <ul class="usersAnswer"></ul>
+        
+    <script>
+
+        // exercice 1
+        let article1=document.getElementsByTagName('p')        
+        console.log(article1);
+        article1[3].remove();
+        console.log(article1);
+
+        let a = document.querySelector('h2');
+        a.addEventListener("mouseover", func);              
+    function func(){  
+        a.style.background = 'red'  
+    }
+
+    let b = document.querySelector('h3');
+        b.addEventListener("click", func1);              
+    function func1(){        
+        b.style.display = 'none'                
+    }
+
+    let c = document.querySelectorAll('p');
+    function fun12(){
+        for(let ci of c){        
+        ci.style.fontWeight ='bold';
+        }
+    }
+    
+    let d = document.querySelector('h1');
+        d.addEventListener("mouseover", func2);              
+    function func2(){
+        $ = Math.floor((Math.random()*100));  
+        d.style.fontSize = $+'px'  
+    }  
+
+
+    // exercice 2
+
+    let firstName = document.getElementById('fname')
+    let lastName = document.getElementById('fname')
+    console.log(firstName)
+    console.log(lastName)
+    function récupérer_label1(po){
+    return document.getElementById('First name:'+fname).innerHTML;
+    }
+    function récupérer_label2(pi){
+    return document.getElementById('Last name:'+lname).innerHTML;
+    }
+
+    </script>
+</body>
+</html>
+
+

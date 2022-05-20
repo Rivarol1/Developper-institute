@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    ...html code…
+    <script>
+        /*console.log("hello word !")
+        alert("welcome to my page !") // afficher une infos
+        prompt("what is your name? ") //poser une question
+        confirm("are you we on monday?") // confirme une infos 
+        document.write("hello word !!! this code is from js") // ecrire dans le html*/
+      
+        
+        /*
+            for (let i = 0; i <= 15; i++){
+                if (i%2==0) { 
+                console.log(i+ 'est pair')
+               document.write(i+ 'est pair')
+            }
+            else{
+                console.log(i +'est impair')
+                document.write(i+ 'est impair')
+            }
+            }
+        
+        */
+
+        /*
+        // afficher tous les nombres premiers compris entre 0 et 100 
+        for (let n=0; n<=12; n++){
+            for(let i=2; i<=12; i++){
+                if(n%i!=0){
+                    console.log(n +'est un nombre premier')
+                    document.write(n +'est un nombre premier')
+                }else{
+                    console.log(n +' est non premier')
+                    document.write(n +'est un nombre premier')
+                }
+            }
+        }
+        */
+        
+        //Exercices XP
+        //Exercice 1 : Liste Des Personnes        
+        
+        /*
+        var people = ["Greg", "Mary", "Devon", "James"];
+        //1 supprimons Greg du tableau       
+        people.splice(0,1);
+        console.log(people);
+        document.write(people);
+        */
+
+        /*
+        //2 ecrivons un code pour remplacer james par jason
+        var people = ["Greg", "Mary", "Devon", "James"];
+        people.splice(3, 1, "Jason");
+        console.log(people);
+        document.write(people);
+        */
+
+        /*
+        //3 ajoter notre nom a la fin
+        var people = ["Greg", "Mary", "Devon", "James"];
+        var monNom = people.push("Meli ");
+        console.log(people);
+        document.write(people);
+        */
+         
+        /*
+        //4 Écrivez le code qui console.logs l'index de Mary.
+        var people = ["Greg", "Mary", "Devon", "James"];       
+        console.log(people.indexOf('Mary'));
+        document.write(people.indexOf('Mary'));
+        */
+
+        /*
+        // 5 Écrivez du code pour faire une copie du tableau people à l'aide de la méthode slice.
+        var people = ["Greg", "Mary", "Devon", "James"];  
+        var newpeople = people.slice(0, 1);
+        var newpeople1 = people.slice(2, 4);
+        var newpeople2 = newpeople.concat(newpeople1) 
+        console.log(newpeople2);
+        document.write(newpeople2);
+        */
+        
+        /*
+        //7 variable last
+        var people = ["Greg", "Mary", "Devon", "James"];
+        var last=people [people.length-1]
+            console.log(last)
+            document.write(last)
+        */
+
+        // Exercice 2 : Vos Couleurs Préférées
+        
+        /*
+        var colors = ['black', 'red', 'blue', 'lavender', 'crimson']
+        for (var d in colors){
+            console.log('my #'+ (d+1)+ 'choice is '+ colors[d])
+            document.write('my #'+ (d+1)+ 'choice is '+ colors[d]);
+        }
+        */
+
+        /*
+        //Exercice 3 : Répéter La Question        
+        
+        var a="";
+        var b=0;
+        while (b<10){
+            a+= "le nombre est " +b;
+            b++;
+            alert("<br>le nombre est " +a );
+       }
+       */
+
+       /*
+       //Exercice 4 : Gestion Du Bâtiment
+       var numberOfFloors = 4;
+       var building = {
+            numberOfFloors : 4,
+            numberOfAptByFloor : {
+                firstFloor : 3,
+                secondFloor : 4,
+                thirdFloor : 9,
+                fourthFloor : 2,
+                
+            },
+            nameOfTenants : ["Sarah", "Dan", "David"],
+             numberOfRoomsAndRent:  {
+                sarah: [3, 990],
+                dan :  [4, 1000],
+                david : [1, 500],
+            },
+            
+            
+        }           
+            console.log('this building has' +building.numberOfFloors + 'floor');
+            console.log('' +building.numberOfFloor['firstFloor']+building.numberOfFloor['secondFloor'] 
+            +building.numberOfFloor['thirdFloor']+ building.numberOfFloor['fourthFloor']);
+            console.log('the name of second tenant is' + building.nameOfTenants[1]);
+            console.log('the number of room in Dan\'s are' + building.numberOfRoomsAndRent)
+
+            let sum_rents = building.numberOfRoomsAndRent[sarah][1]+building.numberOfRoomsAndRent[david][1]
+            if(sum_recent>building.numberOfRoomsAndRent[sarah][1]+building.numberOfRoomsAndRent[david][1]=1200){
+                console.log(building)
+            }
+
+
+    */
+
+    /*
+    // exercice 5
+
+        let family = {mother:'Alice', dog:'Ghost', brother:'Armel'}
+        for(let items in family){
+            console.log(family[items]);
+        }
+    */$
+    
+    // exercice 7
+
+    let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+    name.sort()
+    console.log(names)
+    let socity_name=''
+    namas.array.forEach(name => {socity_name+=socity_name + names[0]
+        console.log(socity_name);
+    });
+
+    </script>
+
+</body>
+</html>

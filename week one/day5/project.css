@@ -1,0 +1,70 @@
+/*--- start navbar--*/
+/*
+.navbar ul li a{
+    position: absolute;
+    right: 200px;
+    color: black;
+}
+*/
+/*--- end navbar--*/
+
+/*-- genral --*/
+h4{
+    color: chocolate;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 750;
+    font-size: 25px;
+    font-family: Georgia, serif;
+}
+/*-- end general --*/
+
+/*-- start jumbotron --*/
+.container1 {
+    width: 100%;
+    height: 600px;    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url(images/headerback.jpg);
+    background-attachment: fixed;
+}
+.jumbotron{
+    padding-top: 8%;
+    padding-bottom: 12%;
+    padding-right: 20%;
+    padding-left: 35%;
+
+}
+/*-- end jumbotron*/
+
+/*-- start about me --*/
+.my{
+    padding-left: 245px;
+    padding-right: 95px;
+}
+
+/*-- start team--*/
+.team{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+/*-- end team --*/
+
+/*-- last --*/
+form{
+    margin-bottom: 10px;
+}
+.form-group{
+    padding: 5px;   
+}
+.form-group1{       
+    margin: 10px;    
+}
+#bio{
+    text-align: center;
+   
+}
+
+/*-- end last --*/
+

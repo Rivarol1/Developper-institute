@@ -1,0 +1,45 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*start nav bar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: coral;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    
+}
+
+nav h1{
+    padding: -40px;
+    margin-top:  20px;    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 0 10px; 
+    padding-right: 40px;     
+}
+/*end nav bar*/
+
+section {
+    margin: 30px;
+    padding: 50px;
+    display: flex;
+    /*flex-direction: column;*/
+}
+.products {
+    margin: 30px;
+    margin-top: 80px;
+    display: flex;
+       
+}

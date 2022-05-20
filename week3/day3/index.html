@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Animation</title>
+</head>
+<body>
+    <style>
+        
+        h1 {
+            display: none;
+            padding-top: 10px;
+            text-indent: 20px;
+            text-decoration: underline;
+            color: red;
+            border: 2 solid black;            
+        }
+
+        .gd{          
+            width: 250px;
+            height: 250px;
+            background-color: chartreuse;
+        }
+        .pt{            
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position:relative;
+            
+        }
+
+    </style>
+    <h1>Les soldes se terminent dans 10min !</h1>
+    <img src="C:\Users\hp\Desktop\developper institute\week3\day3\train.jpeg" alt="" style="position:absolute">
+    <div class="gd">
+        <div class="pt">
+
+        </div>
+    </div>
+    <button id="btn">click to move the red square</button>
+
+    <script>
+       
+       let timer
+        function display_banner(){
+            document.querySelector('h1').style.display = 'block'
+        }
+        setTimeout(display_banner, 5000)
+        let train = document.querySelector('img')
+        let move = 50
+        function mouve_train(){
+            train.style.left = move +'px'
+            move+=50
+            if (move>1200){
+                clearInterval(timer)
+            }
+        }
+        timer=setInterval(mouve_train, 500)
+        
+
+        //move square
+        let btn=document.querySelector('#btn');
+        let t
+        let square =document.querySelector('.pt');
+        btn.addEventListener('click', set)        
+        function set(){
+            btn.addEventListener('click', set)
+        }
+    </script>
+</body>
+</html>

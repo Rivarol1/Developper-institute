@@ -1,0 +1,66 @@
+
+
+<!-- Exercice 1-->
+<div id="container">Users:</div>
+<ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+<ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+</ul>
+
+<Script>
+    let div_container = document.getElementById('container');
+    console.log(div_container);
+    //2
+    let li = document.querySelectorAll('.list')[0].lastElementChild;
+    li.innerText='Richard'
+    //3
+    let ul_list=document.getElementsByClassName('list');
+    for(ul of ul_list){
+        console.log(ul.firstElementChild);
+        ul.firstElementChild.innerText='Alexandra'        
+    }
+    //4
+    let sarah_node = document.getElementsByTagName('ul')[1].children[1];
+    ul_list[1].removeChild(sarah_node);
+    //5
+    for(let ul of ul_list){
+        ul.classList.add('student_list')
+    }
+
+
+</Script>
+
+
+        <!-- Exercice 2-->
+
+        <div>Users:</div>
+<ul>
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+
+<script>
+//1 Ajoutez une couleur d'arrière-plan "bleu clair" et un peu de rembourrage au fichier <div>.
+    let div4 = document.querySelector('div')
+    div4.style.backgroundColr = 'light blue'
+//2 Ne pas afficher le <li>qui contient le nœud de texte "John".
+    let john_li = document.querySelector('li');
+    john_li.style.display='none'
+//3 Ajoutez une bordure au <li>qui contient le nœud de texte "Pete".
+    let pete_li = document.querySelector('li:last-child');
+    pete_li.style.border = '5px solid black'
+//4 Modifiez la taille de la police de tout le corps.
+    document.body.style.fontSize='25px'
+//5 Bonus : Si la couleur de fond du divest "bleu clair", alertez "Bonjour x et y" 
+//(x et y sont les utilisateurs dans la div).
+    if(div4.style.background==lightblue){
+        alert('hello') // a completer
+    }
+
+</script>
+

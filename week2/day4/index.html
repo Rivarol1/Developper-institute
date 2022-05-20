@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    ...html code…
+    <script>
+
+        /*
+
+            // exercice function 1
+
+        function display_age (myAge){
+            let mum_age=myAge*2
+            let dad_age= mum_age*1.2
+            console.log('I am' +myAge + '\n my mum_age is' +mum_age + 'and my dad_age is'+ dad_age);
+        }
+            display_age(30)
+
+            // exercice function 2
+
+        function display_age(myAge){
+            let mum_age =myAge*2
+            return mum_age
+        }
+            display_age(10)
+
+
+            // arrow function
+        let display_age1 = myAge=>{return myAge*2}
+
+            //nombre pair
+        function is_even(num){
+            if(num%2==0){
+            return num+ 'is even'
+            }
+        }
+
+        */
+
+            // Exercices XP
+        /*
+            //Exercice 1 : Informations
+            //Partie I : fonction sans paramètres
+
+        function infoAboutMe(){
+            var nom = 'Meli' 
+            var prenom= 'rivarol'
+            var age = 10
+            console.log(nom + 'est mon nom'+ '\n mon prenom est'+prenom + '\mon age est' + age);
+        }
+        infoAboutMe()
+
+            //Partie  : fonction avec paramètres
+        function infoAboutPerson(personName, personAge, personFavoriteColor){
+            var personName = 'Meli' 
+            var personAge= 20
+            var personFavoriteColor = 'red'
+            console.log('You name is' + personName + '\n you are' + 20 + 'years old' + 'your favorite color is' +personAge );
+        }
+            infoAboutPerson("David", 45, "blue")
+            infoAboutPerson("Josh", 12, "yellow")
+        */
+
+        /*
+            //Exercise 2 : Tips
+
+        function calculateTip(){
+            //var bill = a
+            //var pourboire = b 
+            //var gain = (a*b)/100
+
+                let a= Number(prompt("entrer la facture"))
+            if (a<50){
+                gain = (a*20)/100
+                console.log("le pourboire est " + gain);
+                }else if(a<=200 && a>50){
+                    gain = (a*15)/100
+                    console.log("le pourboire est " + gain);
+
+                    }else {
+                        gain = (a*10)/100
+                    console.log("le pourboire est " + gain);
+                }
+        }
+
+        */
+
+        /*
+
+            // Exercise 3 calculateTip()
+        
+            var multiple_list=0
+        var sum=0
+
+        function isDivisible(){
+            for (i=0; i<=500; i++){
+                if (i%23==0){
+                    console.log(i +"est divisible par 23")
+                    sum+=i
+               };       
+
+           }
+            console.log(sum)
+       }
+        isDivisible()
+
+        */
+        
+        /*
+            //Exercice 4 : Liste De Courses
+
+        let stock = { 
+            "banana": 6, 
+            "apple": 0,
+            "pear": 12,
+            "orange": 32,
+            "blueberry":1
+        }  
+
+        let prices = {    
+            "banana": 4, 
+            "apple": 2, 
+            "pear": 1,
+            "orange": 1.5,
+            "blueberry":10
+        }
+        
+        shoppingList=["banana", "orange", "apple"]
+        a=0
+        b=0
+        function myBill(){
+            for (Item of shoppingList){
+                if (stock[Item]!=0){
+                    b=stock[Item]*prices[Item]
+                    a+=b                    
+                }
+                console.log(a)                
+            }
+        }
+        myBill()
+
+        */
+        
+        
+            //Exercise 5 : What’s In My Wallet ?
+            a=0
+            itemPrice=0
+            amountOfChange=[]
+          
+            var bItem=[0.25, 0.10, 0.05, 0.01]        
+        function changeEnough(itemPrice, amountOfChange){
+            
+            for (var i in amountOfChange){                
+                a= amountOfChange[i]*bItem[i]+a
+                               
+            }           
+            if (a>itemPrice){
+                return true
+            } else {
+                return false
+            }
+        }
+        changeEnough(4.25, [25, 20, 5, 0])  
+        
+        //Exercice 6
+
+        function hotelcost() {
+            let night;
+            do{
+                nights = Number(prompt('how many night would you stay'));
+            }
+            while(night=='' ||null|| undifined || isNaN(night))
+            let costPernigh =140
+            let total_price=night*costPernigh
+            return total_price            
+        }
+
+        function planeRidecost() {
+            let destination;
+            do{
+                destination = prompt('what your destination?');
+            }
+            while(destination=='' ||null|| undifined || !isNaN(destination))
+             switch(destination){
+                 case 'london':
+                     return 183
+                 case 'Paris':
+                     return 200
+                default:
+                    return 300
+             }               
+        }
+
+        function rentalCartcost() {
+            let car_rent;
+            do{
+                car_rent = Number(prompt('how many night would you stay'));
+            }
+            while(car_rent=='' ||null|| undifined || isNaN(car_rent))
+            if(car_rent>10){
+                let discount = (car_rent*cosPerday)*5/100
+                let total_price = (car_rent*carPerday)-discount
+                return total_car_price
+            }else{
+                let total_price = car_rent*costPerday
+                return total_car_price
+            }
+            
+            let totalvacationcost=()=> {
+                let hotel_price = hotelcost()
+                let plane_price = planeRidecost()
+                let car_price = rentalCartcost()
+                return hotelcost() + planeRidecost() + rentalCartcost()
+            }
+        }        
+        console.log('the total cost of your vacation is ${totalvacationcost()}')       
+      
+    </script>
+
+</body>
+</html>
